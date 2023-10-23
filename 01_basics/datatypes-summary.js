@@ -33,3 +33,27 @@ const myFunction = function(){ // datatype: object function
 }
 
 console.log(typeof anotherId);
+
+//**************************************************** */
+
+// Stack (Primitive), Heap(Non-Primitive)
+
+let name = "sachin"
+let anothername = name
+
+anothername = "Mahor"
+
+console.log(anothername)
+console.log(name)
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Sachin@gmail.com"
+
+console.log(userOne)
+console.log(userTwo)
