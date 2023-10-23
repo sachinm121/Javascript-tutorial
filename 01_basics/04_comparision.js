@@ -14,4 +14,4 @@ console.log(undefined > 0)
 console.log(undefined < 0)
 
 // ===
-console.log()
+console.log("2" === 2)
