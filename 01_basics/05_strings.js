@@ -20,17 +20,18 @@ console.log(gameName.indexOf('t'));
 const newString = gameName.substring(0, 4)
 console.log(newString);
 
-const anotherString = gameName.slice(-8, 4)
+const anotherString = gameName.slice(-8, -6)
 console.log(anotherString);
 
 const newStringOne = "   sachin    "
 console.log(newStringOne);
 console.log(newStringOne.trim());
 
-const url = "https://sachin.com/sachin%20choudhary"
+const url = "https://sachin.com/sachin%20mahor"
 
 console.log(url.replace('%20', '-'))
 
 console.log(url.includes('sundar'))
+
 
 console.log(gameName.split('-'));
