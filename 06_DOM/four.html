@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    // brute force approach
+    const ul = document.querySelector(".language")
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        
+        li.innerHTML = langName
+
+        ul.appendChild(li)
+    }
+
+    addLanguage("Typescript")
+    addLanguage("Python")
+    addLanguage("Java")
+
+    // optimized approach
+    function addOptiLanguage(langName){
+        const li = document.createElement("li")
+        const addText = document.createTextNode(langName)
+        li.appendChild(addText)
+        ul.appendChild(li)
+    }
+
+    addOptiLanguage("C++")
+
+    // Edit1
+    const secondLang = document.querySelector("li:nth-child(2)")
+
+    // 1st way
+    // secondLang.innerHTML = "R language"
+
+    // 2nd way 
+    const newLi = document.createElement('li')
+    newLi.textContent = "R language"
+    secondLang.replaceWith(newLi)
+
+    // Edit2
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = "<li>HTML</li>"
+
+    //Remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+</script>
+</html>
