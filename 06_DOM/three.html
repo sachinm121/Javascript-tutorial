@@ -16,5 +16,16 @@
     div.setAttribute("title","Generate title/ set title")
     div.style.backgroundColor = "red"
     div.style.padding = "15px"
+
+    // Two ways to add text in tag
+    // 1st
+    // div.innerHTML = "Hello I am div"
+
+    // 2
+    const addText = document.createTextNode("Hello I am div")
+    div.appendChild(addText)
+
+    //Add div on document
+    document.body.appendChild(div)
 </script>
 </html>
