@@ -1,0 +1,1 @@
+const input1 = document.querySelector()
