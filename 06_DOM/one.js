@@ -41,3 +41,42 @@ document.querySelector('input[type="password"]')
 {/* <input type=​"password" id name fdprocessedid=​"p26den">​ */}
 
 
+document.querySelector('ul')
+{/* <ul>​…​</ul>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​</ul>​ */}
+const ullist = document.querySelector('ul')
+
+ullist
+{/* <ul>​…​</ul>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​<li class=​"list-item">​…​</li>​</ul>​ */}
+const firstItem = ullist.querySelector('li')
+
+firstItem
+{/* <li class=​"list-item">​…​</li>​::marker​"one"</li>​ */}
+
+firstItem.style.backgroundColor = 'green';
+'green'
+firstItem.style.padding = '10px';
+'10px'
+
+firstItem.innerText
+'one'
+firstItem.innerText = 'five'
+'five'
+
+
+const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList.style.color = 'red';
+// VM18175:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+//     at <anonymous>:1:24
+// (anonymous) @ VM18175:1
+tempLiList[0].style.color = 'red';
+'red'
+
+
+const tempLiList = document.querySelectorAll('li')
+undefined
+tempLiList
+NodeList(4) [li.list-item, li.list-item, li.list-item, li.list-item]
+tempLiList.forEach((li) => {
+    li.style.color = 'pink';
+})
