@@ -52,9 +52,16 @@
     // }, false )
 
     //preventDefault
-    document.getElementById('google').addEventListener('click', function(e){
-        e.preventDefault();
-        console.log("google clicked");
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     console.log("google clicked");
+    // })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e.target)
+        // console.log(e.target.parentNode)
+        const removeIt = e.target.parentNode;
+        removeIt.remove();
     })
 </script>
 </html>
