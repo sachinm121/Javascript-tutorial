@@ -40,16 +40,21 @@
     // }, false )
     
     //Event prapogation
-    document.querySelector('#images').addEventListener('click',function(e){
-        console.log('Click in side ui')
-        // console.log(e)
-    }, false )
+    // document.querySelector('#images').addEventListener('click',function(e){
+    //     console.log('Click in side ui')
+    //     // console.log(e)
+    // }, false )
 
-    document.querySelector('#owl').addEventListener('click',function(e){
-        console.log('owl clicked')
-        // console.log(e)
-        e.stopPropagation();
-    }, false )
+    // document.querySelector('#owl').addEventListener('click',function(e){
+    //     console.log('owl clicked')
+    //     // console.log(e)
+    //     e.stopPropagation();
+    // }, false )
 
+    //preventDefault
+    document.getElementById('google').addEventListener('click', function(e){
+        e.preventDefault();
+        console.log("google clicked");
+    })
 </script>
 </html>
