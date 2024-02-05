@@ -23,10 +23,33 @@
     //     alert('owl')
     // }
 
+    //attachEvenet() -> internet explorar
+    //jQuery -> on
+
+    //type, timestamp, preventDefault
+    //target, toElement, srcElement, currentTarget,
+    //clientX, clientY, screenX, screenY
+    //altkey, ctrlkey, shiftkey, keyCode
+
+
     //default value false
-    const owl = document.querySelector('#owl');
-    owl.addEventListener('click',function(){
-        alert('owl clicked')
+    // const owl = document.querySelector('#owl');
+    // owl.addEventListener('click',function(e){
+    //     // alert('owl clicked')
+    //     console.log(e)
+    // }, false )
+    
+    //Event prapogation
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log('Click in side ui')
+        // console.log(e)
     }, false )
+
+    document.querySelector('#owl').addEventListener('click',function(e){
+        console.log('owl clicked')
+        // console.log(e)
+        e.stopPropagation();
+    }, false )
+
 </script>
 </html>
